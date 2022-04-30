@@ -1,0 +1,2 @@
+export const MONTH_SWITCH = "MONTH_SWITCH";
+export const CHART_UPDATE = "CHART_UPDATE";

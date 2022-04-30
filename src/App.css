@@ -1,0 +1,123 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+-------------------------------------------------------------------
+Theme Name:     Kelenty Project
+Theme URL:      
+Author:         Mohamed Isak.K
+Version:        1.0
+Last change:    April 29, 2022
+Description:    Task from kelenty
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --bg: #024B63;
+    --bgcard:#003942;
+    --icon-color:#DD9800;
+    --light-green:#00DD00;
+    --meter-red:#FF0047;
+    --green-bar:#00B4A9;
+    --yellow-bar: #FFB100;
+    --graph-green-line: #00B4A9;
+    --graph-line : #86A0A5;
+    --white: #ffffff;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+body{
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+}
+.App__Header{
+    background-color: var(--bgcard);
+    padding: 15px;
+    position: relative;
+    
+}
+.App__brand{
+    font-size: 1.6rem;
+    display: inline-block;
+    color: var(--white);
+    position: relative;
+    left: 45%;
+    font-weight: 400;
+}   
+select {
+    width: 10%;
+    padding: 8px 17px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--bgcard);
+    color: white;
+  }
+  .App_header_label{
+    position: relative;
+    left: 70%;
+    color: white;
+  }
+.App__Filter{
+    position: relative;
+    left: 72%;
+}
+
+.dashboard__section__body{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+.dashboard__system__card{
+    background-color: var(--bgcard);
+    height: 10rem;
+    margin: 5px 5px 0px 0px;
+}
+.dashboard__system__title{
+ font-size: 1.1rem;
+ font-weight: 200;
+ margin: 6px;  
+}
+
+.dashboard__system_data{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+.dashboard__system__text{
+font-size: 3.0rem;
+margin-right: 36px;
+color: white;
+}
+.dashboard__system__icon{
+    color: var(--icon-color);
+    font-size: 2.6rem;
+}
+
+
+/******
+   Chart Section
+***/
+.speedometer{
+    margin: 6% 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.dashboard__chart__body{
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+}
+
+.dashboard__chart_card{
+    background-color: var(--bgcard);
+    height: 17rem;
+    margin: 5px 5px 0px 0px;
+}
